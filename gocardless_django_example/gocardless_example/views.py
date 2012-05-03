@@ -3,10 +3,10 @@ import gocardless
 
 gocardless.environment = "sandbox"
 
-gocardless.set_details({"app_id":"kzCOPw2JtJvRQxKTlFqQTGvxLvkoMS1Eb0Dgl5QVc1W0NKpOEZDvESfGOI_kkG2l",
-    "app_secret":"IO9AlgPsbYNCtFlciV_HOBrGB3Mi07PFYSn2zx4uK5xaWJI1AzwnYeC86x46ji_g",
-    "token":"5EFkzOrUOZ8t+iaP86NggIy+iKGJ0f7QMnMd+Q3P4mQk17Kzq9G1vYrNlEWFldlg",
-    "merchant_id":"02FX1YS3H1"})
+gocardless.set_details(app_id="kzCOPw2JtJvRQxKTlFqQTGvxLvkoMS1Eb0Dgl5QVc1W0NKpOEZDvESfGOI_kkG2l",
+    app_secret="IO9AlgPsbYNCtFlciV_HOBrGB3Mi07PFYSn2zx4uK5xaWJI1AzwnYeC86x46ji_g",
+    token="5EFkzOrUOZ8t+iaP86NggIy+iKGJ0f7QMnMd+Q3P4mQk17Kzq9G1vYrNlEWFldlg",
+    merchant_id="02FX1YS3H1"})
 
 def index(request):
     subscriptions = gocardless.client.merchant().subscriptions()
